@@ -1,18 +1,24 @@
-class StringCalculator{
+class StringCalculator {
+  constructor() {}
 
-    constructor(){}
+  calculate(string_to_sum = "", delimiter = ",") {
+    let sum = 0;
 
-    calculate (string_to_sum="" , delimiter="," ){
+    this.convertString(string_to_sum, delimiter).forEach((number) => {
+      this.validateNumber(number);
+      sum += +number;
+    });
 
-        let sum = 0;
-
-        this.convertString(numberString, delimiter).forEach((number) => {
-            this.validateNumber(number);
-            sum += +number;
-        });
-
-        return sum;
+    return sum;
+  }
+  convertString(string, delimiter) {
+    return string.split(delimiter);
+  }
+  validateNumber(number) {
+    if (number < 0) {
+      throw Error(`negative numbers not allowed ${number} `);
     }
-
-
+  }
 }
+
+module.exports=StringCalculator
