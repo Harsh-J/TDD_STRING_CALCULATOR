@@ -16,7 +16,7 @@ class StringCalculator {
   }
   validateNumber(number) {
     if (number < 0) {
-      throw Error(`negative numbers not allowed ${number} `);
+      throw Error(`negative numbers not allowed`);
     }
   }
 }
