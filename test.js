@@ -12,5 +12,8 @@ describe("Task addition", () => {
   it("Calculate string with one element", () => {
     assert.strictEqual(stringCalcObj.calculate("1"), 1);
   });
+  it("Calculate string with one element 2", () => {
+    assert.strictEqual(stringCalcObj.calculate("5"), 5);
+  });
 
 });
