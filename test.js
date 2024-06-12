@@ -35,6 +35,12 @@ describe("Task addition", () => {
   it('Calculate string with "\\n" delimiter ', () => {
     assert.strictEqual(stringCalcObj.calculate("5\n1\n5", "\n"), 11);
   });
-  
+  it('Calculate string with "\\n" delimiter 2', () => {
+    assert.strictEqual(stringCalcObj.calculate("5\n1\n7", "\n"), 13);
+  });
+  it('Calculate string with ";" delimiter ', () => {
+    assert.strictEqual(stringCalcObj.calculate("2;5;1", ";"), 8);
+  });
+
   
 });
