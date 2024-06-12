@@ -21,5 +21,11 @@ describe("Task addition", () => {
   it("Calculate string with two elements", () => {
     assert.strictEqual(stringCalcObj.calculate("1,1"), 2);
   });
+  it("Calculate string with two elements 2", () => {
+    assert.strictEqual(stringCalcObj.calculate("3,1"), 4);
+  });
 
+  it("Calculate string with 3 elements ", () => {
+    assert.strictEqual(stringCalcObj.calculate("1,2,3"), 6);
+  });
 });
