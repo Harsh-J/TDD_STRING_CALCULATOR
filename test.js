@@ -41,6 +41,9 @@ describe("Task addition", () => {
   it('Calculate string with ";" delimiter ', () => {
     assert.strictEqual(stringCalcObj.calculate("2;5;1", ";"), 8);
   });
-
+  it("String with negative numbers return exceptions", () => {
+    const sum = () => stringCalcObj.calculate("-1;6;7", ";");
+    assert.throws(sum, new Error("negative numbers not allowed"));
+  });
   
 });
