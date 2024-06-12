@@ -1,0 +1,25 @@
+{
+  "name": "string_cal_tdd",
+  "version": "1.0.0",
+  "description": "This is String Cal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Harsh-J/TDD_STRING_CALCULATOR.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Harsh-J/TDD_STRING_CALCULATOR/issues"
+  },
+  "homepage": "https://github.com/Harsh-J/TDD_STRING_CALCULATOR#readme",
+  "devDependencies": {
+    "mocha": "^10.4.0"
+  },
+  "dependencies": {
+    "chai": "^5.1.1"
+  }
+}
